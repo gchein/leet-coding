@@ -29,31 +29,8 @@ def partition(arr, low, high)
   i + 1
 end
 
+arr = Array.new(100) { (1..100).to_a.sample }
 
-
-arr = [3, 6, 8, 10, 1, 2, 1]
-
+p arr
 p quicksort(arr)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# [2,1,5,4,3]
-
-# [2,1,3,5,4] -> pivot index = 2
-
-# [1,2,3,5,4] -> pivot index = 0
-
-# [1,2,3,4,5] -> pivot index = 3
-
-# [1,2,3,4,5] - final
+p quicksort(arr) == arr.sort
